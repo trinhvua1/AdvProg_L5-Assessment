@@ -19,6 +19,10 @@ void updateMask(string& mask, const char ch, const string& word)
           ch (const char): the character that is tested to see if it is in the word or not
           word (const string&): the word that is needed to be tested
      */
+    for (size_t i = 0; i < word.size(); i++) {
+        if (word[i] == ch)
+            mask[i] = ch;
+    }
 
 }
 
