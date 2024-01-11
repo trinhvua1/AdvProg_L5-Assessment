@@ -22,6 +22,7 @@ void updateMask(string& mask, const char ch, const string& word)
     for (size_t i = 0; i < word.size(); i++) {
         if (word[i] == ch)
             mask[i] = ch;
+        else mask[i] = '_';
     }
 
 }
